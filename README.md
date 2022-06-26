@@ -25,7 +25,7 @@ MechaCar prototypes effectively.
 ![suspension_coil](image_analysis/suspension_coil.png)
 
 -   The current manufacturing data meet the design specification for all manufacturing lots in total but not for each lot individually as the
-variance of the suspension coils exceed 100 pounds per square inch for `Lot3`.
+variance of the suspension coils exceeds 100 pounds per square inch for `Lot3`.
 
 
 ## T-Tests on Suspension Coils
@@ -65,14 +65,14 @@ manufacturers based on various groups such as:
 
 We will need this mpg data for mechacar and other manufacturers with the above segments to perform the analysis.
 
-To compare the matrics, we can use paired t-test to identify whether average mpg of mechacar is statistically similar to average mpgf of other
+To compare the metrics, we can use paired t-test to identify whether average mpg of mechacar is statistically similar to average mpg of other
 manufacturers. We can define the NULL hypothesis for the paired t-test as the difference between the data values of mpg across manufacturers
 should be 0. The alternative hypothesis for paired t-test will be that the difference between the data values of mpg across manufacturers should not be 0. 
 
 As the result of paired t-test, we will obtain the p-value. We can compare this p value with significance value of 0.05 to determine the result of NULL
-hypothesis. If the p-value is greater than 0.05, which means it is greater than the significance level. So we can not reject the NULL hypothesis which in
+hypothesis. If the p-value is greater than 0.05, which means it is greater than the significance level. So, we cannot reject the NULL hypothesis which in
 this case would mean that the average mps values across manufacturers is similar. In this case, since the means are similar, we should conduct an ANOVA test
-to see if the variance of the mpg values also differ or are similar. This will help us ascertain if the mpg values follow the same distribution statistically
+to see if the variance of the mpg values also differs or are similar. This will help us ascertain if the mpg values follow the same distribution statistically
 or not. 
 
 If the p-value is smaller than 0.05, it would mean that the alternative hypothesis is true and that the mean values of mpg is not similar. We can then
