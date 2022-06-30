@@ -46,13 +46,13 @@ enough evidence to reject the null hypothesis and we can affirm that the lot1 sa
 The p-value for lot2 is 0.060. Assuming the significance level was 0.05 percent, the p-value is above the significance level. Therefore, we don't
 have sufficient evidence to reject the null hypothesis, and we can affirm that the two means are statistically similar.
 
-![lot2_t_test](image_analysis/lot_2_test.png)
+![lot2_t_test](image_analysis/lot2_t_test.png)
 
 -   **Lot3 interpretation and findings for t-test result**
 The p-value for lot3 is 0.041. Assuming the significance level was 0.05 percent, the p-value is below the significance level. Therefore, we have
 sufficient evidence to reject the null hypothesis, and we can affirm that the two means are statistically different.
 
-![lot3_t_test](image_analysis/lot_3_test.png)
+![lot3_t_test](image_analysis/lot3_t_test.png)
 
 ## Study Design: MechaCar vs Competition
 
