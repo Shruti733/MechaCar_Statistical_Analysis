@@ -19,26 +19,23 @@ total_summary <- suspension_data %>% summarize(Mean = mean(PSI),Median = median(
 # creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation
 lot_summary <- suspension_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI),Median = median(PSI),Variance = var(PSI),SD= sd(PSI))
 
-#generate 50 randomly sampled data points
-sample_suspension <- suspension_data %>% sample_n(50)
-
 #compare sample versus population means
-all_lots_test <- t.test(sample_suspension$PSI, mu=mean(suspension_data$PSI)) 
+all_lots_test <- t.test(suspension_data$PSI, mu= 1500) 
 
 #Lot1 data sampling
-lot1_data <- sample_n(subset(suspension_data, Manufacturing_Lot== "Lot1"),50)
+lot1_data <- subset(suspension_data, Manufacturing_Lot== "Lot1")
 
 # Lot1 t test 
-lot1_test <- t.test(lot1_data$PSI, mu=mean(suspension_data$PSI)) 
+lot1_test <- t.test(lot1_data$PSI, mu= 1500) 
 
 #Lot2 data sampling
-lot2_data <- sample_n(subset(suspension_data, Manufacturing_Lot== "Lot2"),50)
+lot2_data <- subset(suspension_data, Manufacturing_Lot== "Lot2")
 
 # Lot2 t test 
-lot2_test <- t.test(lot2_data$PSI, mu=mean(suspension_data$PSI))
+lot2_test <- t.test(lot2_data$PSI, mu= 1500)
 
 #Lot3 data sampling
-lot3_data <- sample_n(subset(suspension_data, Manufacturing_Lot== "Lot3"),50)
+lot3_data <- subset(suspension_data, Manufacturing_Lot== "Lot3")
 
 # Lot3 t test 
-lot3_test <- t.test(lot3_data$PSI, mu=mean(suspension_data$PSI))
+lot3_test <- t.test(lot3_data$PSI, mu= 1500)
